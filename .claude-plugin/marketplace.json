@@ -1,0 +1,14 @@
+{
+  "name": "lyftium",
+  "owner": {
+    "name": "LYFTIUM",
+    "url": "https://www.lyftium.com"
+  },
+  "plugins": [
+    {
+      "name": "lyftium",
+      "source": "./",
+      "description": "Call LYFTIUM Ethereum Mainnet JSON-RPC with X-Api-Key; rpm plans; fails closed with 503 when tip gate is closed."
+    }
+  ]
+}

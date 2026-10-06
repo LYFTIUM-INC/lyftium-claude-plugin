@@ -1,0 +1,25 @@
+{
+  "name": "lyftium",
+  "displayName": "LYFTIUM",
+  "version": "1.0.0",
+  "description": "Call LYFTIUM Ethereum Mainnet JSON-RPC with X-Api-Key; rpm plans; fails closed with 503 when tip gate is closed.",
+  "author": {
+    "name": "LYFTIUM",
+    "url": "https://www.lyftium.com"
+  },
+  "homepage": "https://www.lyftium.com",
+  "repository": "https://github.com/LYFTIUM-INC/lyftium-claude-plugin",
+  "license": "MIT",
+  "keywords": ["ethereum", "mainnet", "json-rpc", "rpc", "x-api-key"],
+  "documentationUrl": "https://app.lyftium.com/docs",
+  "supportUrl": "https://www.lyftium.com",
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "LYFTIUM API key",
+      "description": "Your LYFTIUM X-Api-Key from checkout. Never put the key in a URL query string.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}
