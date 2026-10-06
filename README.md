@@ -4,10 +4,18 @@ Call LYFTIUM Ethereum Mainnet JSON-RPC with `X-Api-Key`; rpm plans; fails closed
 
 Product: [lyftium.com](https://www.lyftium.com) · Status: [app.lyftium.com/status](https://app.lyftium.com/status) · Docs: [app.lyftium.com/docs](https://app.lyftium.com/docs)
 
+## Subscribe first — bring your own key
+
+This plugin does **not** include a LYFTIUM API key and will never share one.
+
+1. Subscribe / checkout at [lyftium.com](https://www.lyftium.com) (Polar).
+2. Copy **your** `X-Api-Key` from the app after purchase.
+3. Paste it into Claude Code plugin config (`/plugin configure lyftium`) or `LYFTIUM_API_KEY` in your shell — never commit it.
+
 ## What this plugin does
 
 - Skill `/lyftium:lyftium-rpc` — wire ethers v6, viem, Foundry notes, and curl to `https://eth-mainnet-rpc.lyftium.com`
-- Prompts for your API key via Claude Code `userConfig` (sensitive; never shipped in the repo)
+- Prompts for **your subscriber** API key via Claude Code `userConfig` (sensitive; never shipped in the repo)
 
 ## Install (local / one session)
 

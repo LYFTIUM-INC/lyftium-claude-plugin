@@ -7,6 +7,16 @@ description: Call LYFTIUM Ethereum Mainnet JSON-RPC with X-Api-Key; rpm plans; f
 
 Use this skill when the user wants to point ethers, viem, Foundry, curl, or another Ethereum Mainnet client at LYFTIUM.
 
+## Subscribe first
+
+LYFTIUM does not ship a shared API key in this plugin. If the user has no key yet:
+
+1. Send them to https://www.lyftium.com to subscribe / checkout.
+2. After purchase they get **their own** `X-Api-Key` in the app.
+3. They paste that key into Claude Code plugin config or `LYFTIUM_API_KEY` — never invent, reuse, or share a company key.
+
+Do not proceed with live RPC calls until they have their own key (or an existing env key they own).
+
 ## Facts (claim-safe — do not invent more)
 
 - Endpoint: `https://eth-mainnet-rpc.lyftium.com`
@@ -18,7 +28,7 @@ Use this skill when the user wants to point ethers, viem, Foundry, curl, or anot
 - Product / checkout: https://www.lyftium.com · https://app.lyftium.com
 - Docs: https://app.lyftium.com/docs
 
-If the plugin `userConfig` api_key is set, prefer `${user_config.api_key}` / the configured key. Otherwise ask the user for their key and store it only in their env or Claude Code plugin config — never commit it.
+If the plugin `userConfig` api_key is set, prefer `${user_config.api_key}` / the configured key (that is **their** subscribed key). Otherwise send them to https://www.lyftium.com to subscribe, then ask for **their** key and store it only in their env or Claude Code plugin config — never commit it, never use a LYFTIUM-owned key.
 
 ## curl
 
